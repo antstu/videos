@@ -1,13 +1,13 @@
 import classnames from 'classnames'
 
 import { useAuth } from '@redwoodjs/auth'
-import { Link, routes, useLocation, navigate } from '@redwoodjs/router'
+import { Link, routes, useLocation, useParams, navigate } from '@redwoodjs/router'
 
 import { useCurrentUser } from 'src/helpers/hooks'
 
 function NavItem({ to = null, onClick = null, children }) {
   const location = useLocation()
-  const active = location === to
+  const active = location.pathname === to
   return (
     <li className={classnames('mr-4 inline text-xl', { 'font-bold': active })}>
       {to ? (
