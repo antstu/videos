@@ -54,6 +54,7 @@ const Video = ({ video }) => {
   }
 
   const onReactionClick = (type) => {
+    console.log(type)
     reactToVideo({ variables: { id: video.id, type } })
   }
 

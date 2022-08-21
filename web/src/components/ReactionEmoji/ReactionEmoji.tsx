@@ -20,6 +20,10 @@ export const ReactionEmojis = {
   [Type.NoSpeak]: '🙊',
   [Type.PrayerHands]: '🙏',
   [Type.Rocket]: '🚀',
+  [Type.Look] : '👀',
+  [Type.Angel] : '😇',
+  [Type.Nerd] : '🤓',
+  [Type.Yawn] : '🥱'
 }
 
 export const ReactionList = Object.keys(ReactionEmojis)
