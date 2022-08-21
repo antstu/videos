@@ -40,6 +40,7 @@ export const schema = gql`
     url: String!
     title: String!
     description: String
+    imageUrl: String
     createdAt: DateTime!
     updatedAt: DateTime!
     user: User!
@@ -65,12 +66,14 @@ export const schema = gql`
     url: String!
     title: String!
     description: String
+    imageUrl: String
   }
 
   input UpdateVideoInput {
     url: String
     title: String
     description: String
+    imageUrl: String
   }
 
   type Mutation {
